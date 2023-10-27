@@ -1,0 +1,15 @@
+p0 = frame 
+p1 = not /
+p2 = deer /
+p3 = fern /
+p4 = aou /
+p5 = jao /
+p6 = petch /
+p7 = kiw /
+p8 = guide /
+p9 = gogo /
+p10 = namwan /
+p11 = kong /
+p12 = tunn /
+p13 = sie /
+p14 = first /
