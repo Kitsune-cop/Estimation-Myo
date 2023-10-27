@@ -58,10 +58,10 @@ class Plot(object):
       print(emg_data.shape, orientation[:, None].shape)
       data = np.array(np.concatenate((emg_data,orientation[:, None]), axis=1))
       print(data)
-      np.savetxt('./data_valo/neon_C_' + str(self.count) + '_.csv', data, delimiter=',')
-      # np.savetxt('./data-valo/p000/04/p000_rock_' + str(self.count) + '_.csv', emg_data, delimiter=',')
-      # np.savetxt('./data-valo/p000/04/p000_relax_' + str(self.count) + '_.csv', emg_data, delimiter=',')
-      # np.savetxt('./data-valo/p000/04/p000_paper_' + str(self.count) + '_.csv', emg_data, delimiter=',')
+      np.savetxt('./data/p000/00/p000_scissor_' + str(self.count) + '_.csv', data, delimiter=',')
+      # np.savetxt('./data/p000/00/p000_rock_' + str(self.count) + '_.csv', emg_data, delimiter=',')
+      # np.savetxt('./data/p000/00/p000_relax_' + str(self.count) + '_.csv', emg_data, delimiter=',')
+      # np.savetxt('./data/p000/00/p000_paper_' + str(self.count) + '_.csv', emg_data, delimiter=',')
       print(self.count)
       self.count += 1
     if self.count >= 60 :

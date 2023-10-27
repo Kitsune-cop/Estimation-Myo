@@ -1,31 +1,13 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[11]:
-
-
 import pandas as pd
 import numpy as np
 import os
-
-
-# In[12]:
-
 
 path = './data-00/'
 x = []
 y = []
 count = 0
 
-
-# In[10]:
-
-
 # True in [str(i) in '41.csv' for i in range(40,61)]
-
-
-# In[13]:
-
 
 for p_name in os.listdir(os.path.join(path)):
     for t_name in os.listdir(os.path.join(path,p_name)):
@@ -47,31 +29,12 @@ for p_name in os.listdir(os.path.join(path)):
                         y.append([0])
                     count += 1
 
-
-# In[14]:
-
-
 X = np.array(x)
 Y = np.array(y)
-
-
-# In[15]:
-
 
 # X = X/127
 X.shape, Y.shape
 # X[0][1]
 
-
-# In[16]:
-
-
 np.savetxt("./attribute_200_8.csv", X.reshape((-1, X.shape[-1])), delimiter=',')
 np.savetxt("./target_200_8.csv", Y.reshape((-1, Y.shape[-1])), delimiter=',')
-
-
-# In[ ]:
-
-
-
-
